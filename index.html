@@ -1,12 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ef0b158d1f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Fruit Burst</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="flex md:px-20 lg:px-50 lg:py-10 py-2 md:py-5">
+        <div
+          class="navbar bg-white md:bg-gray-300 lg:bg-red-500 rounded-full lg:text-white"
+        >
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+
+              <li><a>About us </a></li>
+              <li><a> Shop </a></li>
+              <li><a>All fruits </a></li>
+            </ul>
+          </div>
+          <div
+            class="navbar-start lg:navbar-middle flex flex-1 justify-start lg:justify-center lg:align-center"
+          >
+            <img src="images/logo.png" class="w-7 -mr-3" alt="" />
+            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+          </div>
+          <div
+            class="navbar-end md:navbar-center pr-3 hidden md:block lg:block"
+          >
+            <div class="flex justify-end items-center">
+              <input
+                type="text"
+                placeholder="Search here "
+                class="input md:w-60 lg:w-80 rounded-full form-control"
+              />
+              <img
+                src="/images/magnifying-glass-solid.svg"
+                class="absolute w-5 mr-3"
+                alt="Search Icon"
+              />
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="navbar-end flex-1 lg:hidden">
+              <button class="btn btn-square btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block w-5 h-5 stroke-current"
+                  color="black"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+
+              <li><a>About us </a></li>
+              <li><a> Shop </a></li>
+              <li><a>All fruits </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="slider-banner px-0 md:px-4 lg:px-20">
+        <div class="carousel w-full z-10">
+          <div id="slide1" class="carousel-item w-full">
+            <div
+              class="hero min-h-min md:min-h-[400px] lg:min-h-[600px]"
+              style="background-image: url(images/banner1.png)"
+            >
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1
+                    class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-white font-extrabold"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 text-white text-xs md:text-base lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-red-500 text-white text-base border-none hover:border-2-red-500 hover:bg-white hover:text-red-500"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between align-center transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-min md:min-h-[400px] lg:min-h-[600px]"
+              style="background-image: url(images/banner2.png)"
+            >
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1
+                    class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-white font-extrabold"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 text-white text-xs md:text-base lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-red-500 text-white text-base border-none hover:border-2-red-500 hover:bg-white hover:text-red-500"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-min md:min-h-[400px] lg:min-h-[600px]"
+              style="background-image: url(images/banner3.png)"
+            >
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1
+                    class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-white font-extrabold"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 text-white text-xs md:text-base lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-red-500 text-white text-base border-none hover:border-2-red-500 hover:bg-white hover:text-red-500"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-min md:min-h-[400px] lg:min-h-[600px]"
+              style="background-image: url(images/banner4.png)"
+            >
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1
+                    class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-white font-extrabold"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 text-white text-xs md:text-base lg:text-xl">
+                    We supply highly quality organic products
+                  </p>
+                  <button
+                    class="btn bg-red-500 text-white text-base border-none hover:border-2-red-500 hover:bg-white hover:text-red-500"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="fruit-variety rounded-xl hidden md:flex lg:flex justify-center align-center relative"
+      >
+        <div
+          class="bg-white rounded-xl px-10 py-5 grid grid-cols-5 justify-center align-center flex gap-16 -bottom-10 md:left-24 lg:left-72 z-20 absolute"
+        >
+          <div class="fruits text-center flex flex-col gap-3">
+            <img
+              src="images/fruit1.png"
+              alt=""
+              class="lg:w-32 md:w-20 object-cover"
+            />
+            <p class="text-base">Grapes</p>
+          </div>
+          <div class="fruits text-center flex flex-col gap-3">
+            <img
+              src="images/fruit9.png"
+              alt=""
+              class="lg:w-28 md:w-20 object-cover"
+            />
+            <p class="text-base -mt-2">Banana</p>
+          </div>
+          <div class="fruits text-center flex flex-col gap-3">
+            <img
+              src="images/fruit3.png"
+              alt=""
+              class="lg:w-32 md:w-20 object-cover"
+            />
+            <p class="text-base">Mango</p>
+          </div>
+          <div class="fruits text-center flex flex-col gap-3">
+            <img
+              src="images/fruit4.png"
+              alt=""
+              class="lg:w-32 md:w-20 object-cover"
+            />
+            <p class="text-base">Strawberry</p>
+          </div>
+          <div class="fruits text-center flex flex-col gap-3">
+            <img
+              src="images/fruit5.png"
+              alt=""
+              class="lg:w-32 md:w-20 object-cover"
+            />
+            <p class="text-base">Pomegranate</p>
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
