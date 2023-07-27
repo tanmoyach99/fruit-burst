@@ -286,11 +286,12 @@
       </section>
     </header>
     <main>
-      <section class="deal mt-32">
+      <!-- deal of the day -->
+      <section class="deal mt-10 lg:mt-32">
         <div
-          class="deal-header px-3 md:px-20 lg:px-40 flex flex-col md:flex-row lg:flex-row justify-between algn-center"
+          class="deal-header px-3 md:px-20 lg:px-40 flex flex-col md:flex-row lg:flex-row justify-between align-center"
         >
-          <div class="heading">
+          <div class="heading text-center lg:text-left md:text-left">
             <h2 class="text-xl md:text-xl lg:text-4xl font-extrabold mb-4">
               Deal Of The Day
             </h2>
@@ -301,7 +302,9 @@
             </p>
           </div>
           <div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div
+              class="grid grid-flow-col gap-5 text-center ml-10 auto-cols-max"
+            >
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
                   <span style="--value: 15"></span>
@@ -346,9 +349,11 @@
         </div>
         <div class="flex align-center justify-center">
           <div
-            class="deal-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-2 md:px-10 lg:px-40 mt-10"
+            class="deal-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 px-2 md:px-10 lg:px-40 mt-10"
           >
-            <div class="card w-72 rounded-sm bg-base-100 border border-red-400">
+            <div
+              class="fruit-1 card w-72 rounded-sm bg-base-100 border border-red-400"
+            >
               <figure class="px-10 pt-10">
                 <img src="images/fruit6.png" alt="Shoes" />
               </figure>
@@ -360,38 +365,38 @@
                 </h2>
 
                 <p class="text-base text-gray-500 mt-1">Apple</p>
-                <div class="rating mt-2">
+                <div id="fruit1-rating" class="rating mt-2">
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-1-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-1-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-1-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-1-rating"
                     class="mask mask-star-2 bg-red-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-1-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                 </div>
                 <div class="card-actions">
-                  <a href="#my_modal_8" class="text-red-500">Details</a>
+                  <a href="#fruit1" class="text-red-500">Details</a>
 
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="fruit1">
                     <div class="modal-box">
                       <div class="flex align-center justify-center">
                         <img
@@ -407,31 +412,31 @@
                         <br />
                         amazing and fresh fruits.
                       </p>
-                      <div class="rating mt-2">
+                      <div class="fruit-1-rating rating mt-2">
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-1-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-1-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-1-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-1-rating"
                           class="mask mask-star-2 bg-red-400"
                           checked
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-1-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                       </div>
@@ -455,7 +460,9 @@
                 </div>
               </div>
             </div>
-            <div class="card w-72 rounded-sm bg-base-100 border border-red-400">
+            <div
+              class="fruit-2 card w-72 rounded-sm bg-base-100 border border-red-400"
+            >
               <figure class="px-10 pt-10">
                 <img src="images/fruit8.png" alt="Shoes" />
               </figure>
@@ -467,38 +474,38 @@
                 </h2>
 
                 <p class="text-base text-gray-500 mt-1">Red Dragon</p>
-                <div class="rating mt-2">
+                <div class="fruit-2-rating rating mt-2">
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-2-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-2-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-2-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-2-rating"
                     class="mask mask-star-2 bg-red-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-2-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                 </div>
                 <div class="card-actions">
-                  <a href="#my_modal_8" class="text-red-500">Details</a>
+                  <a href="#fruit2" class="text-red-500">Details</a>
 
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="fruit2">
                     <div class="modal-box">
                       <div class="flex align-center justify-center">
                         <img
@@ -514,31 +521,31 @@
                         <br />
                         amazing and fresh fruits.
                       </p>
-                      <div class="rating mt-2">
+                      <div class="fruit-2-rating rating mt-2">
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-2-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-2-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-2-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-2-rating"
                           class="mask mask-star-2 bg-red-400"
                           checked
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-2-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                       </div>
@@ -562,7 +569,9 @@
                 </div>
               </div>
             </div>
-            <div class="card w-72 rounded-sm bg-base-100 border border-red-400">
+            <div
+              class="fruit-3 card w-72 rounded-sm bg-base-100 border border-red-400"
+            >
               <figure class="px-10 pt-10">
                 <img src="images/fruit7.png" alt="Shoes" />
               </figure>
@@ -574,39 +583,39 @@
                 </h2>
 
                 <p class="text-base text-gray-500 mt-1">Orange</p>
-                <div class="rating mt-2">
+                <div class="fruit-3-rating rating mt-2">
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-3-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-3-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-3-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-3-rating"
                     class="mask mask-star-2 bg-red-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-3-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                 </div>
                 <div class="card-actions">
                   <!-- The button to open modal -->
-                  <a href="#my_modal_8" class="text-red-500">Details</a>
+                  <a href="#fruit3" class="text-red-500">Details</a>
 
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="fruit3">
                     <div class="modal-box">
                       <div class="flex align-center justify-center">
                         <img
@@ -622,31 +631,31 @@
                         <br />
                         amazing and fresh fruits.
                       </p>
-                      <div class="rating mt-2">
+                      <div class="fruit-3-rating mt-2">
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-3-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-3-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-3-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-3-rating"
                           class="mask mask-star-2 bg-red-400"
                           checked
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-3-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                       </div>
@@ -670,7 +679,9 @@
                 </div>
               </div>
             </div>
-            <div class="card w-72 rounded-sm bg-base-100 border border-red-400">
+            <div
+              class="fruit-4 card w-72 rounded-sm bg-base-100 border border-red-400"
+            >
               <figure class="px-10 pt-10">
                 <img src="images/fruit9.png" alt="Shoes" />
               </figure>
@@ -682,39 +693,39 @@
                 </h2>
 
                 <p class="text-base text-gray-500 mt-1">Banana</p>
-                <div class="rating mt-2">
+                <div class="fruit-4-rating rating mt-2">
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-4-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-4-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-4-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-4-rating"
                     class="mask mask-star-2 bg-red-400"
                     checked
                   />
                   <input
                     type="radio"
-                    name="rating-2"
+                    name="fruit-4-rating"
                     class="mask mask-star-2 bg-red-400"
                   />
                 </div>
                 <div class="card-actions">
                   <!-- The button to open modal -->
-                  <a href="#my_modal_8" class="text-red-500">Details</a>
+                  <a href="#fruit4" class="text-red-500">Details</a>
 
-                  <div class="modal" id="my_modal_8">
+                  <div class="modal" id="fruit4">
                     <div class="modal-box">
                       <div class="flex align-center justify-center">
                         <img
@@ -730,31 +741,31 @@
                         <br />
                         amazing and fresh fruits.
                       </p>
-                      <div class="rating mt-2">
+                      <div class="fruit-4-rating rating mt-2">
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-4-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-4-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-4-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-4-rating"
                           class="mask mask-star-2 bg-red-400"
                           checked
                         />
                         <input
                           type="radio"
-                          name="rating-2"
+                          name="fruit-4-rating"
                           class="mask mask-star-2 bg-red-400"
                         />
                       </div>
@@ -785,6 +796,7 @@
           <button class="btn bg-red-500 text-white rounded-lg">Shop all</button>
         </div>
       </section>
+      <!-- team -->
       <section class="team mt-10 px-2 md:px-10 lg:px-40">
         <div
           class="hero min-h-max md:min-h-[400px] lg:min-h-[600px]"
@@ -859,7 +871,216 @@
           </div>
         </div>
       </section>
+      <!-- why choose us -->
+
+      <section class="why-choose-us px-2 md:px-10 lg:px-40 mt-10">
+        <h3 class="text-xl md:text-2xl lg:text-4xl font-extrabold text-center">
+          Why choose us
+        </h3>
+        <p class="text-base tesxt-gray-500 text-center mt-5">
+          Contrary to popular belief, is not simply random text. It has roots in
+          a piece of classical <br />
+          Latin literature from 45 BC, making it over 2000 years old.
+        </p>
+        <div
+          class="choose-reasons grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10"
+        >
+          <div class="reason-container order-2 lg:order-1 md:order-1">
+            <div class="single-reason mt-5 md:mt-1">
+              <div
+                class="desc flex flex-col lg:flex-row justify-center align-center gap-5"
+              >
+                <div class="icon flex justify-center">
+                  <img
+                    src="images/people.png"
+                    class="w-14 rounded-full bg-gray-200 my-5 p-1"
+                    alt=""
+                  />
+                </div>
+                <div class="description text-center lg:text-left">
+                  <h6 class="font-extrabold text-2xl">
+                    Dedicated Team and support
+                  </h6>
+                  <div
+                    class="w-32 border-b border-gray-500 mt-2 ml-36 md:ml-12 lg:ml-0"
+                  ></div>
+                  <p class="text-gray-500 text-base mt-4">
+                    Professional employees are there for you to pick br the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-reason mt-5 md:mt-1">
+              <div
+                class="desc flex flex-col lg:flex-row justify-center align-center gap-5"
+              >
+                <div class="icon flex justify-center">
+                  <img
+                    src="images/love.png"
+                    class="w-14 rounded-full bg-gray-200 my-5 p-1"
+                    alt=""
+                  />
+                </div>
+                <div class="description text-center lg:text-left">
+                  <h6 class="font-extrabold text-2xl">
+                    Best minerals and nutrition
+                  </h6>
+                  <div
+                    class="w-32 border-b border-gray-500 mt-2 ml-36 md:ml-12 lg:ml-0"
+                  ></div>
+                  <p class="text-gray-500 text-base mt-4">
+                    Professional employees are there for you to pick br the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-reason mt-5 md:mt-1">
+              <div
+                class="desc flex flex-col lg:flex-row justify-center align-center gap-5"
+              >
+                <div class="icon flex justify-center">
+                  <img
+                    src="images/gift-box.png"
+                    class="w-16 rounded-full bg-gray-200 my-5 p-1"
+                    alt=""
+                  />
+                </div>
+                <div class="description text-center lg:text-left">
+                  <h6 class="font-extrabold text-2xl">Gift and Certificates</h6>
+                  <div
+                    class="w-32 border-b border-gray-500 mt-2 ml-36 md:ml-12 lg:ml-0"
+                  ></div>
+                  <p class="text-gray-500 text-base mt-4">
+                    Professional employees are there for you to pick br the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img-container order-1 lg:order-2 md:order-2">
+            <img
+              src="images/whychoose1.png"
+              alt=""
+              class="w-96 h-96 mt-10 lg:mt-0 md:block md:h-96 block lg:block xl:block 2xl:block"
+            />
+            <img
+              src="images/fruitbasket.jpg"
+              class="hidden md:block lg:hidden xl:hidden md:h-96 w-96 mt-2"
+              alt=""
+            />
+          </div>
+          <div class="reason-container order-3">
+            <div class="single-reason mt-5 md:mt-1">
+              <div
+                class="desc flex flex-col lg:flex-row-reverse justify-center align-center gap-5"
+              >
+                <div class="icon flex justify-center">
+                  <img
+                    src="images/transport.png"
+                    class="w-16 rounded-full bg-gray-200 contain my-5 p-1"
+                    alt=""
+                  />
+                </div>
+                <div class="description text-center lg:text-right">
+                  <h6 class="font-extrabold text-2xl">Integrated Supplier</h6>
+                  <div
+                    class="w-32 border-b border-gray-500 mt-2 ml-36 md:ml-12 lg:ml-[160px]"
+                  ></div>
+                  <p class="text-gray-500 text-base mt-4">
+                    Professional employees are there for you to pick br the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-reason mt-5 md:mt-1">
+              <div
+                class="desc flex flex-col lg:flex-row-reverse justify-center align-center gap-5"
+              >
+                <div class="icon flex justify-center">
+                  <img
+                    src="images/ice-cream.png"
+                    class="w-16 rounded-full bg-gray-200 my-5 p-1"
+                    alt=""
+                  />
+                </div>
+                <div class="description text-center lg:text-right">
+                  <h6 class="font-extrabold text-2xl">Sustainable Practice</h6>
+                  <div
+                    class="w-32 border-b border-gray-500 mt-2 ml-36 md:ml-12 lg:ml-[160px]"
+                  ></div>
+                  <p class="text-gray-500 text-base mt-4">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-reason mt-5 md:mt-1">
+              <div
+                class="desc flex flex-col lg:flex-row-reverse justify-center align-center gap-5"
+              >
+                <div class="icon flex justify-center">
+                  <img
+                    src="images/charity.png"
+                    class="w-16 rounded-full bg-gray-200 my-5 p-1"
+                    alt=""
+                  />
+                </div>
+                <div class="description text-center lg:text-right">
+                  <h6 class="font-extrabold text-2xl">Benefits and Profits</h6>
+                  <div
+                    class="w-32 border-b border-gray-500 mt-2 ml-36 md:ml-12 lg:ml-[160px]"
+                  ></div>
+                  <p class="text-gray-500 text-base mt-4">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer footer-center p-10 bg-black text-white rounded mt-10">
+      <div class="flex justify-center align-center">
+        <img src="images/logo.png" class="w-10 -mr-3" alt="" />
+        <a class="btn btn-ghost normal-case text-3xl">Fruit Burst</a>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div class="flex flex-wrap align-center justify-center gap-10">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Shops</a>
+          <a class="link link-hover">All fruits</a>
+          <a class="link link-hover">My Account</a>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center">
+        <div
+          class="flex flex-wrap align-center justify-center gap-10 md:gap-4 lg:gap-4"
+        >
+          <a href=""><img src="images/fb.png" class="w-10" alt="" /></a>
+          <a href=""><img src="images/instagram.png" class="w-10" alt="" /></a>
+          <a href=""><img src="images/messenger.png" class="w-10" alt="" /></a>
+          <a href=""><img src="images/linkedin.png" class="w-10" alt="" /></a>
+          <a href=""><img src="images/twitter.png" class="w-10" alt="" /></a>
+          <a href=""><img src="images/youtube.png" class="w-10" alt="" /></a>
+        </div>
+      </div>
+      <div>
+        <p>
+          Copyright &copy; 2023 - All right reserved by Fruit Burst Industries
+          Ltd
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
